@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Career Planning & Resume Mentor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-elements">
+        <div class="blob shape1"></div>
+        <div class="blob shape2"></div>
+    </div>
+    
+    <div class="container">
+        <header>
+            <h1>Career Planning & Resume Mentor</h1>
+            <p class="subtitle">Powered by AI to map your ideal career path</p>
+        </header>
+
+        <main class="glass-panel">
+            <div class="input-section" id="inputForm">
+                <div class="form-group">
+                    <label for="skills">Enter Your Skills</label>
+                    <input type="text" id="skills" placeholder="e.g. Python, React, Project Management, Communication">
+                </div>
+                
+                <div class="form-group">
+                    <label for="resume">Paste Your Resume Text</label>
+                    <textarea id="resume" rows="6" placeholder="Paste your resume content here..."></textarea>
+                </div>
+                
+                <button id="analyzeBtn" class="primary-btn">
+                    <span class="btn-text">Analyze Matches</span>
+                    <span class="loader hidden"></span>
+                </button>
+            </div>
+
+            <div id="resultsSection" class="results-section hidden">
+                <div class="results-header">
+                    <h2>AI Analysis Complete</h2>
+                    <button id="resetBtn" class="secondary-btn">New Analysis</button>
+                </div>
+                
+                <div class="results-grid">
+                    <div class="result-card">
+                        <h3>Top Career Matches</h3>
+                        <ul id="careerMatches" class="match-list">
+                            <!-- JS will populate this -->
+                        </ul>
+                    </div>
+                    
+                    <div class="result-card">
+                        <h3>Resume Health Score</h3>
+                        <ul id="resumeMatches" class="match-list">
+                            <!-- JS will populate this -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
